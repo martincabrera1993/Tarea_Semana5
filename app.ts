@@ -89,4 +89,15 @@ presionarOperacion(operacion: string) {
 }
   this.nuevoNumero = true;
   }
+  abrirUniandes() {
+    window.open('https://www.uniandes.edu.ec/', '_blank');
+  }
+  exit () {
+    window.close();
+  }
+  raizCuadrada() {
+    const valorActual = parseFloat(this.pantalla);
+    this.pantalla = Math.sqrt(valorActual).toString();
+  } 
 }
+
