@@ -1,37 +1,41 @@
-<div class="contedor">
+<div class="contedor"> 
   <mat-card-content>
-      <mat-card class="calculadora">
-    <mat-card-title style="text-align: center; color: rgb(255, 0, 0);font-size: 5ch;">CALCULADORA</mat-card-title>
-  </mat-card>
+<mat-card-title style="text-align: center; color: rgb(255, 0, 0); font-family: 'Times New Roman', Times, serif 30px;font-size: 10ch;">😊BIENVENIDOS</mat-card-title>
   <div class="pantalla">
     {{pantalla}}
   </div>
   <div class="botones">
-  <button mat-raised-button color="warm" (click)="limpiar()">C</button>
-  <button mat-raised-button color="warm" (click)="limpiar()">CE</button>
-  <button mat-raised-button color="warm" (click)="agregarPorcentaje()">%</button>
-  <button mat-raised-button color="warm" (click)="borrar_ultimo()">(X)</button>
+  <button mat-raised-button color="warn" style="color: rgb(0, 0, 0);" (click)="agregarPorcentaje()">%</button>
+  <button mat-raised-button color="warn" style="color: rgb(255, 0, 0);" (click)="limpiar()">CE</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="limpiar()">C</button>
+  <button mat-raised-button color="warm" style="color: rgb(101, 111, 248);" (click)="raizCuadrada()">√</button>
 
-  <button mat-raised-button color="warm" (click)="agregarNumero('7')">7</button>
-  <button mat-raised-button color="warm" (click)="agregarNumero('8')">8</button>
-  <button mat-raised-button color="warm" (click)="agregarNumero('9')">9</button>
-  <button mat-raided-button color="warm" (click)="presionarOperacion('/')">/</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);"(click)="agregarNumero('7')">7</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('8')">8</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('9')">9</button>
+  <button mat-raided-button color="warm" style="color: rgb(255, 255, 255);" (click)="presionarOperacion('/')">➗</button>
 
-  <button mat-raised-button color="warm" (click)="agregarNumero('4')">4</button>
-  <button mat-raised-button color="warm" (click)="agregarNumero('5')">5</button>
-  <button mat-raised-button color="warm" (click)="agregarNumero('6')">6</button>
-  <button mat-raided-button color="warm" (click)="presionarOperacion('*')">*</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('4')">4</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('5')">5</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('6')">6</button>
+  <button mat-raided-button color="warm" style="color: rgb(255, 255, 255);" (click)="presionarOperacion('*')">✖️</button>
 
-  <button mat-raised-button color="warm" (click)="agregarNumero('1')">1</button>
-  <button mat-raised-button color="warm" (click)="agregarNumero('2')">2</button>
-  <button mat-raised-button color="warm" (click)="agregarNumero('3')">3</button>
-  <button mat-raided-button color="warm" (click)="presionarOperacion('-')">-</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('1')">1</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('2')">2</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('3')">3</button>
+  <button mat-raided-button color="warm" style="color: rgb(255, 253, 253);" (click)="presionarOperacion('-')">➖</button>
 
-  <button mat-raised-button color="warm" (click)="agregarNumero('0')">0</button>
-  <button mat-raised-button color="warm" (click)="agregarDecimal()">.</button>
-  <button mat-raised-button color="warm" (click)="obtenerResultado()">=</button>
-  <button mat-raided-button color="warm" (click)="presionarOperacion('+')">+</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarNumero('0')">0</button>
+  <button mat-raised-button color="warm" style="color: rgb(0, 0, 0);" (click)="agregarDecimal()">.</button>
+  <button mat-raised-button color="warm" style="color: rgb(255, 0, 0);" (click)="obtenerResultado()">🟰</button>
+  <button mat-raided-button color="warm" style="color: rgb(255, 254, 254);" (click)="presionarOperacion('+')">➕</button>
+  
 </div>|
+<div style="text-align: center; margin-top: 0px; margin-bottom: 30px;">
+<button mat-raised-button color="primary" style="color: rgb(0, 0, 0); font-family: 'Amasis', Times, serif; font-size: 30px;" (click)="abrirUniandes()">IR - PÁGINA UNIVERSIDAD 😎</button>
+</div>
+<div style="text-align: center; margin-top: 1cm; margin-bottom: 50px;">
+<button mat-raised-button color="primary" style="color: rgb(255, 0, 0);" (click)="exit()">🔚SALIR</button>
+</div>
   </mat-card-content>
 </div>|
-|
